@@ -39,7 +39,7 @@ preprocessor = ColumnTransformer(
 
 pipeline = Pipeline([
     ("preprocessing", preprocessor),
-    ("classifier", RandomForestClassifier)
+    ("classifier", RandomForestClassifier())
 ])
 
 # Train the model on the entire dataset
